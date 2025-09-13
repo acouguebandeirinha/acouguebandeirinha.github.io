@@ -45,3 +45,9 @@ document.querySelectorAll('.dropdown > a').forEach(link => {
   });
 });
 
+function toggleMenu() {
+  console.log("clicou!"); // teste
+  document.querySelector(".menu").classList.toggle("show");
+}
+
+
