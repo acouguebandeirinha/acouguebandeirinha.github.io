@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kits - Açougue</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f5f5;
+      color: #222;
+    }
+
+    /* Menu */
+    nav {
+      background: #c62828;
+      padding: 12px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 16px;
+    }
+
+    header { text-align: center; padding: 28px 10px 10px; }
+    h1 { color: #c62828; margin: 0; font-size: 28px; }
+
+    /* Grade de produtos */
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 0 16px 48px;
+    }
+
+    /* Card do produto */
+    .produto {
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      min-height: 360px;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+    .produto:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 26px rgba(0,0,0,0.12);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 170px;
+      object-fit: cover;
+      border-radius: 8px;
+      background: #f2f2f2;
+      margin-bottom: 12px;
+    }
+
+    .produto h3 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .descricao {
+      flex: 1;
+      margin-bottom: 12px;
+      font-size: 14px;
+      line-height: 1.45;
+      color: #444;
+      white-space: pre-line;
+    }
+
+    .preco {
+      font-size: 2rem;
+      color: #c62828;
+      font-weight: 800;
+      margin: 6px 0 0;
+      text-align: right;
+    }
+
+    /* Responsivo */
+    @media (max-width: 820px) {
+      .produtos { grid-template-columns: 1fr; max-width: 640px; }
+      .preco { text-align: left; }
+    }
+  </style>
+</head>
+<body>
+
+   <!-- Menu -->
+   <nav>
+    <a href="index.html">Início</a>
+    <a href="kits.html">Kits de Churrasco</a>
+    <a href="carnes.html">Carnes</a>
+    <a href="temperos.html">Temperos</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <header>
+    <h1>Kits de Churrasco</h1>
+  </header>
+
+  <main class="produtos">
+
+    <!-- Kit Prata -->
+    <article class="produto">
+      <img src="imagens/kit-prata.jpg" alt="Kit Prata">
+      <h3>Kit Prata</h3>
+      <div class="descricao">
+- 1 kg de carne de boi  
+- 1 kg de pernil  
+- 1 kg de asa  
+- 1 kg de linguiça
+      </div>
+      <div class="preco">R$ 99,99</div>
+    </article>
+
+    <!-- Kit Ouro -->
+    <article class="produto">
+      <img src="imagens/kit-ouro.jpg" alt="Kit Ouro">
+      <h3>Kit Ouro</h3>
+      <div class="descricao">
+- 1 kg de asa  
+- 1 kg de linguiça  
+- 1 kg de pernil  
+- 1 kg de alcatra ou contra filé  
+- 1 kg de coração de frango  
+- 1 pão de alho  
+- 1 carvão
+      </div>
+      <div class="preco">R$ 179,99</div>
+    </article>
+
+    <!-- Kit Mega -->
+    <article class="produto">
+      <img src="imagens/kit-mega.jpg" alt="Kit Mega">
+      <h3>Kit Mega</h3>
+      <div class="descricao">
+- 1 kg de alcatra ou contra filé  
+- 1 kg de cabeça de lombo  
+- 1 kg de asa  
+- 1 kg de linguiça  
+- 1,5 kg de toucinho de barriga
+      </div>
+      <div class="preco">R$ 159,99</div>
+    </article>
+
+    <!-- Kit Especial -->
+    <article class="produto">
+      <img src="imagens/kit-especial.jpg" alt="Kit Especial">
+      <h3>Kit Especial</h3>
+      <div class="descricao">
+- 800 g de chã de fora  
+- 800 g de asa  
+- 800 g de pernil  
+- 800 g de linguiça  
+- 1 carvão
+      </div>
+      <div class="preco">R$ 99,99</div>
+    </article>
+
+    <!-- Kit Tradicional -->
+    <article class="produto">
+      <img src="imagens/kit-tradicional.jpg" alt="Kit Tradicional">
+      <h3>Kit Tradicional</h3>
+      <div class="descricao">
+- 700 g de asa  
+- 700 g de porco  
+- 700 g de linguiça  
+- 700 g de boi
+      </div>
+      <div class="preco">R$ 79,99</div>
+    </article>
+
+    <!-- Kit Semanal -->
+    <article class="produto">
+      <img src="imagens/kit-semanal.jpg" alt="Kit Semanal">
+      <h3>Kit Semanal</h3>
+      <div class="descricao">
+- 500 g de bife de boi  
+- 500 g de bife de porco  
+- 500 g de carne moída  
+- 500 g de salsicha  
+- 500 g de frango a passarinho  
+- 500 g de carne de boi para panela  
+- 500 g de linguiça  
+- 500 g de fígado de boi
+      </div>
+      <div class="preco">R$ 99,99</div>
+    </article>
+
+    <!-- Kit Família -->
+    <article class="produto">
+      <img src="imagens/kit-familia.jpg" alt="Kit Família">
+      <h3>Kit Família</h3>
+      <div class="descricao">
+- 700 g de bife de boi  
+- 700 g de carne de panela  
+- 700 g de carne moída  
+- 700 g de fígado de boi  
+- 700 g de frango a passarinho  
+- 700 g de porco  
+- 700 g de linguiça
+      </div>
+      <div class="preco">R$ 129,99</div>
+    </article>
+
+  </main>
+
+</body>
+</html>
