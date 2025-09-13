@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carnes - Açougue</title>
+  <style>
+    /* Estilo geral */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    /* Menu */
+    nav {
+      background: #c62828;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    /* Título */
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+      color: #c62828;
+    }
+
+    /* Grid de produtos */
+
+    .produtos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Sempre 3 colunas */
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.produto {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover; /* Mantém proporcional */
+}
+
+.preco {
+  color: red; /* deixa o preço vermelho */
+  font-weight: bold;
+  font-size: 1.2rem; /* aumenta um pouquinho */
+}
+
+
+  </style>
+</head>
+<body>
+
+  <!-- Menu -->
+   <nav>
+    <a href="index.html">Início</a>
+    <a href="kits.html">Kits de Churrasco</a>
+    <a href="carnes.html">Carnes</a>
+    <a href="temperos.html">Temperos</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <!-- Conteúdo -->
+  <h1>Carnes</h1>
+  <div class="produtos">
+    <div class="produto">
+      <img src="imagens/cha.jpg"width="256" height="172"  alt="Chã">
+      <h3>Chã de dentro grill</h3>
+      <p>Encorpado e saboroso, ideal para bifes e picadinho.</p>
+      <p class="preco">R$42,99 / kg</p>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/tra.jpg"width="250" height="200"  alt="Tradicional">
+      <h3>Chã de dentro tradicional</h3>
+      <p>Macia e versátil, perfeita para fritar ou assar.</p>
+      <p class="preco">R$39,99 / kg</p>
+    </div>
+
+
+<div class="produto">
+  <img src="imagens/fora.png" alt="grill">
+  <h3>Chã de fora grill</h3>
+  <p>Carne nobre e suculenta, perfeita para churrasco.</p>
+  <p class="preco">R$39,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/trad.jpg" width="250" height="200" alt="fora">
+  <h3>Chã de fora tradicional</h3>
+  <p>Macia e saborosa, ótima para receitas do dia a dia.</p>
+  <p class="preco">R$37,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/al.jpg" width="250" height="200" alt="Alcatra">
+  <h3>Alcatra grill</h3>
+  <p>Corte nobre, macio e suculento, ideal para assar.</p>
+  <p class="preco">R$49,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/catra.jpg" width="250" height="200" alt="Alcatra">
+  <h3>Alcatra tradicional </h3>
+  <p>Versátil e prática, com pouca gordura e muito sabor.</p>
+  <p class="preco">R$45,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/costela.jpg" width="250" height="200" alt="costela">
+  <h3>Costela gaúcha</h3>
+  <p>Macia e saborosa, perfeita para cozidos e ensopados.</p>
+  <p class="preco">R$29,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/comun.jpg" width="250" height="200" alt="comun">
+  <h3>Costela de boi</h3>
+  <p>Ideal para panela de pressão, sabor caseiro e marcante.</p>
+  <p class="preco">R$27,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/ac.jpg" width="250" height="200" alt="Ac">
+  <h3>Acém</h3>
+  <p>Versátil e saboroso, ótimo para cozidos, desfiados ou moídos.</p>
+  <p class="preco">R$29,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/mi.jpg" width="250" height="200" alt="mi">
+  <h3>Miolo de acém</h3>
+  <p>Mais macio, ideal para cozidos e desfiados.</p>
+  <p class="preco">R$35,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/pa.jpg" width="250" height="200" alt="Pa">
+  <h3>Patinho</h3>
+  <p>Magro, macio e versátil, ótimo para bife e ensopados. </p>
+  <p class="preco">R$37,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/co.jpg" width="250" height="200" alt="co">
+  <h3>Contra filé tradicional</h3>
+  <p>Macio e suculento, ideal para grelhar ou assar.</p>
+  <p class="preco">R$49,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/gi.jpg" width="250" height="200" alt="gi">
+  <h3>Contra filé grill</h3>
+  <p>Especial e suculento, perfeito para churrasco.</p>
+  <p class="preco">R$54,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/pe.jpg" width="250" height="200" alt="Pe">
+  <h3>Pernil</h3>
+  <p>Saboroso e versátil, ideal para assar ou cozinhar.</p>
+  <p class="preco">R$22,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/to.jpg" width="250" height="200" alt="to">
+  <h3>Toucinho de barriga</h3>
+  <p>Cheio de sabor, perfeito para feijoadas e refogados.</p>
+  <p class="preco">R$25,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/su.jpg" width="250" height="200" alt="su">
+  <h3>Suãn</h3>
+  <p>Sabor intenso e macio, ótimo para qualquer receita.</p>
+  <p class="preco">R$15,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/bi.png" width="250" height="200" alt="bi">
+  <h3>Bisteca</h3>
+  <p>Corte clássico e suculento, a bisteca é perfeita para grelhar ou assar na brasa, garantindo sabor e maciez a cada mordida.</p>
+  <p class="preco">R$22,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/fr.jpg" width="250" height="200" alt="fr">
+  <h3>Frango inteiro</h3>
+  <p>Versátil e macio, ideal para assar ou cozinhar.</p>
+  <p class="preco">R$11,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/as.jpg" width="250" height="200" alt="as">
+  <h3>Asa</h3>
+  <p>Saborosa e crocante, ótima para grelhar ou fritar.</p>
+  <p class="preco">R$15,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/coxa.jpg" width="250" height="200" alt="coxa">
+  <h3>Coxa</h3>
+  <p>Macia e suculenta, perfeita para assar ou cozinhar.</p>
+  <p class="preco">R$11,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/file.jpg" width="250" height="200" alt="file">
+  <h3>Filé de peito</h3>
+  <p>Leve, macio e versátil, ideal para grelhar ou empanar.</p>
+  <p class="preco">R$26,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/kas.webp" width="250" height="200" alt="kas">
+  <h3>Peito com osso</h3>
+  <p>Corte suculento e cheio de sabor, ideal para assar, cozinhar ou preparar na pressão.</p>
+  <p class="preco">R$16,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/cia.jpg" width="250" height="200" alt="li">
+  <h3>Linguiça cia carnes</h3>
+  <p>LSuculenta e temperada, perfeita para churrasco.</p>
+  <p class="preco">R$23,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/per.jpg" width="250" height="200" alt="Picanha">
+  <h3>Linguiça perdigão </h3>
+  <p>Carne selecionada e sabor equilibrado, ideal para grelhar./p>
+  <p class="preco">R$32,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/au.jpg" width="250" height="200" alt="Picanha">
+  <h3>Linguiça aurora</h3>
+  <p>Sabor marcante e suculenta, perfeita para churrascos.</p>
+  <p class="preco">R$32,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/cas.jpg" width="250" height="200" alt="Picanha">
+  <h3>Linguiça caseira</h3>
+  <p>Artesanal e saborosa, com gosto de comida caseira.</p>
+  <p class="preco">R$29,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/com.webp"alt="Picanha">
+  <h3>Acém com osso</h3>
+  <p>Corte saboroso e suculento, ideal para cozidos.</p>
+  <p class="preco">R$27,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/fral.png"alt="Picanha">
+  <h3>Fraldinha</h3>
+  <p>Descriçao</p>
+  <p class="preco">R$37,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/fragril.png"alt="Picanha">
+  <h3>Fraldinha grill.</h3>
+  <p>Macia e versátil, perfeita para churrasco ou panela.</p>
+  <p class="preco">R$39,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/pá.png"alt="Picanha">
+  <h3>Miolo de pá</h3>
+  <p>Carne macia e suculenta, ideal para assar ou cozinhar.</p>
+  <p class="preco">R$39,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/gr.png"alt="Picanha">
+  <h3>Miolo de pá grill</h3>
+  <p>Corte nobre, perfeito para churrasco.</p>
+  <p class="preco">R$39,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/maca.png"alt="Picanha">
+  <h3>Maçã de peito</h3>
+  <p>Saborosa e macia, excelente para bifes ou ensopados.</p>
+  <p class="preco">R$37,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/maça.webp"alt="Picanha">
+  <h3>Maçã de peito grill</h3>
+  <p>Suculenta e perfeita para grelhar.</p>
+  <p class="preco">R$39,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/paa.jpg"alt="Picanha">
+  <h3>Paleta</h3>
+  <p>Versátil e macia, ideal para cozidos ou assados.</p>
+  <p class="preco">R$37,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/paleta.webp"alt="Picanha">
+  <h3>Paleta grill</h3>
+  <p>Sabor intenso, ótima para churrasco.</p>
+  <p class="preco">R$39,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/picanha2.jpg"alt="Picanha">
+  <h3>Picanha tradicional</h3>
+  <p>Macia e suculenta, perfeita para assar ou grelhar.</p>
+  <p class="preco">R$59,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/picanha.png"alt="Picanha">
+  <h3>Picanha grill</h3>
+  <p>Corte especial, ótimo para churrasco.</p>
+  <p class="preco">R$79,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/musculo.jpg"alt="Picanha">
+  <h3>Músculo</h3>
+  <p>Ideal para cozidos, sabor marcante e textura firme.</p>
+  <p class="preco">R$37,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/lagarto.jpg"alt="Picanha">
+  <h3>Lagarto</h3>
+  <p>Macio e versátil, ótimo para assados e fatiados.</p>
+  <p class="preco">R$37,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/lagartinho.jpeg"alt="Picanha">
+  <h3>lagartinho</h3>
+  <p>Corte pequeno e suculento, ideal para ensopados.</p>
+  <p class="preco">R$37,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/picc.png"alt="Picanha">
+  <h3>Picadão de boi</h3>
+  <p>Carne picada, prática e saborosa para receitas rápidas.</p>
+  <p class="preco">R$19,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/Bacon.webp"alt="Picanha">
+  <h3>Bacon</h3>
+  <p>Sabor defumado, perfeito para grelhar ou refogar.</p>
+  <p class="preco">R$39,99 / kg</p>
+</div>
+
+  <div class="produto">
+  <img src="imagens/lombo.webp" alt="lo">
+  <h3>Lombo de porco</h3>
+  <p>Macio e saboroso, ideal para assar.</p>
+  <p class="preco">R$25,99/ kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/pé.png"alt="Picanha">
+  <h3>Pé de porco</h3>
+  <p>Saboroso e versátil, ótimo para cozidos.</p>
+  <p class="preco">R$15,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/orelha.webp"alt="Picanha">
+  <h3>Orelha de porco</h3>
+  <p>Crocante e saborosa, ótima para petiscos ou refogados.</p>
+  <p class="preco">R$6,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/tu.webp"alt="Picanha">
+  <h3>Toucinho comum</h3>
+  <p>Cheio de sabor, ótimo para refogados e caldos.</p>
+  <p class="preco">R$16,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/toi.jpeg"alt="Picanha">
+  <h3>Toucinho de papada</h3>
+  <p>Gorduroso e saboroso, perfeito para receitas tradicionais.</p>
+  <p class="preco">R$24,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/res.webp"alt="Picanha">
+  <h3>Frango resfriado</h3>
+  <p>Carne macia e versátil, ideal para várias receitas.</p>
+  <p class="preco">R$29,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/sem.webp"alt="Picanha">
+  <h3>Peito de frango sem osso</h3>
+  <p>Leve e suculento, ótimo para grelhar ou fritar.</p>
+  <p class="preco">R$29,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/fra.webp"alt="Picanha">
+  <h3>Linguça de frango</h3>
+  <p>Saborosa e suculenta, ideal para churrasco.</p>
+  <p class="preco">R$37,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/figado.png"alt="Picanha">
+  <h3>Figado de boi</h3>
+  <p>Rico em sabor e nutrientes, ótimo para refogados.</p>
+  <p class="preco">R$18,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/mocoto.webp"alt="Picanha">
+  <h3>Mocotó</h3>
+  <p>Ideal para caldos e sopas nutritivas.</p>
+  <p class="preco">R$14,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/rabada.webp"alt="Picanha">
+  <h3>Rabada</h3>
+  <p>Corte saboroso e macio, perfeito para ensopados.</p>
+  <p class="preco">R$29,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/R.jpeg"alt="Picanha">
+  <h3>Rabinho</h3>
+  <p>Pequeno e saboroso, ótimo para receitas tradicionais.</p>
+  <p class="preco">R$24,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/do.jpg"alt="Picanha">
+  <h3>Dobradinha</h3>
+  <p>Clássica e saborosa, perfeita para cozidos.</p>
+  <p class="preco">R$15,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/col.webp"alt="Picanha">
+  <h3>Dobradinha colmeia</h3>
+  <p>Sabor marcante e macia, ótima para ensopados.</p>
+  <p class="preco">R$24,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/coxaa.png"alt="Picanha">
+  <h3>Coxa sobre coxa</h3>
+  <p>Macia e suculenta, perfeita para assar ou fritar.</p>
+  <p class="preco">R$11,99 / kg</p>
+</div>
+
+<div class="produto">
+  <img src="imagens/sol.jpg"alt="Picanha">
+  <h3>Carne de sol</h3>
+  <p>Saborosa e firme, ideal para churrasco ou refogados.</p>
+  <p class="preco">R$29,99 / kg</p>
+</div>
+
+
+<div class="produto">
+  <img src="imagens/calabresa.webp"alt="Picanha">
+  <h3>Linguiça calabresa</h3>
+  <p>Picante e saborosa, ótima para churrasco.</p>
+  <p class="preco">R$39,99 / kg</p>
+</div>
+
+
+<div class="produto">
+  <img src="imagens/porco.png"alt="Picanha">
+  <h3>Costelinha de porco</h3>
+  <p>Saborosa e suculenta, perfeita para assar.</p>
+  <p class="preco">R$29,99 / kg</p>
+</div>
+
+
+<div class="produto">
+  <img src="imagens/pr.jpg"alt="Picanha">
+  <h3>Pernil traseiro</h3>
+  <p>Macio e versátil, ótimo para assados.</p>
+  <p class="preco">R$22,99 / kg</p>
+</div>
+
+
+<div class="produto">
+  <img src="imagens/defumada.webp"alt="Picanha">
+  <h3>Linguiça defumada</h3>
+  <p>Sabor intenso e defumado, ideal para churrasco.</p>
+  <p class="preco">R$28,99 / kg</p>
+</div>
+
+</body>
+</html>
