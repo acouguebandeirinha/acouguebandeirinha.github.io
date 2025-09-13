@@ -7,11 +7,86 @@
   <title>Casa de carnes Bandeirinhas</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+<head>
+  ...
+  <style>
+    /* Reset simples */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.4;
+      padding: 0 10px;
+    }
+
+    header {
+      background-color: #f5f5f5;
+      padding: 10px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; /* Faz o menu quebrar linha no celular */
+      gap: 10px;
+      padding: 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      display: block;
+    }
+
+    .banner {
+      background: url('banner.jpg') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 50px 10px;
+    }
+
+    .destaque ul {
+      list-style: none;
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 10px;
+      background: #f5f5f5;
+    }
+
+    /* Ajustes para telas pequenas */
+    @media (max-width: 600px) {
+      nav ul {
+        flex-direction: column; /* Menu vertical no celular */
+      }
+
+      .banner {
+        padding: 30px 5px;
+        font-size: 14px;
+      }
+
+      h1, h2 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+
 <body>
   <header class="site-header">
     <div class="header-inner">
+
+
       <h1 class="brand">Casa de carnes Bandeirinhas</h1>
- 
+ <h1>Início</h1>
    <nav>
   <ul class="menu">
     <li><a href="index.html">Início</a></li>
