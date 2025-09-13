@@ -3,56 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Carnes - Açougue</title>
+  <title>Tempero - Açougue</title>
   <style>
-    /* Estilo geral */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background: #f9f9f9;
-      color: #333;
-    }
+/* Estilo geral */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f9f9f9;
+  color: #333;
+}
 
-    /* Menu */
-    nav {
-      background: #c62828;
-      padding: 15px;
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-    }
+/* Menu */
+nav {
+  background: #800020; /* vinho */
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* permite quebrar linha no celular */
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 18px;
-      transition: color 0.3s;
-    }
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
 
-    nav a:hover {
-      color: #ffeb3b;
-    }
+nav a:hover {
+  color: #ffeb3b;
+}
 
-    /* Título */
-    h1 {
-      text-align: center;
-      margin: 30px 0;
-      color: #c62828;
-    }
+/* Título */
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  color: #800020;
+}
 
-    /* Grid de produtos */
-
-    .produtos {
+/* Grid de produtos */
+.produtos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Sempre 3 colunas */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  /* se adapta ao tamanho da tela */
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
   margin: auto;
 }
 
+/* Card do produto */
 .produto {
   background: white;
   border-radius: 12px;
@@ -60,24 +62,51 @@
   overflow: hidden;
   transition: transform 0.2s;
   text-align: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
+.produto:hover {
+  transform: scale(1.03);
+}
+
+/* Imagem do produto */
 .produto img {
   width: 100%;
-  height: 200px;
-  object-fit: cover; /* Mantém proporcional */
+  max-height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
+/* Preço */
 .preco {
-  color: red; /* deixa o preço vermelho */
+  color: red;
   font-weight: bold;
-  font-size: 1.2rem; /* aumenta um pouquinho */
+  font-size: 1.2rem;
+}
+
+/* Responsividade extra */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+  }
 }
 
 
   </style>
 </head>
 <body>
+
 
   <!-- Menu -->
    <nav>
