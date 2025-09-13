@@ -350,5 +350,19 @@ html,body { margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; colo
   .menu li:hover > .submenu { display:none; } /* hover não confiável em mobile */
 }
 
+.galeria {
+  display: flex;
+  flex-wrap: wrap; /* quebra para a linha de baixo se faltar espaço */
+  gap: 15px;       /* espaço entre imagens */
+  justify-content: center;
+}
+
+.galeria img {
+  width: 250px;   /* tamanho fixo */
+  border-radius: 10px;
+}
+
+
+
 
 
