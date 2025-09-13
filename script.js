@@ -35,3 +35,13 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 });
+
+document.querySelectorAll('.dropdown > a').forEach(link => {
+  link.addEventListener('click', function (e) {
+    e.preventDefault(); // previne pular para topo
+    e.stopPropagation();
+    const dropdown = link.parentElement;
+    const isOpen = dropdown.classList.toggle('open');
+  });
+});
+
