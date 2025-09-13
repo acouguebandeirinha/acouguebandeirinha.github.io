@@ -1,41 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta name="description" content="Açougue com carnes de qualidade no citrolândia. Tradição e confiança há mais de 30 anos.">
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Açougue com carnes de qualidade no citrolândia. Tradição e confiança há mais de 30 anos.">
   <title>Casa de carnes Bandeirinhas</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Casa de carnes Bandeirinhas</h1>
-   <nav>
-  <ul class="menu">
-    <li><a href="index.html">Início</a></li>
-    <li class="dropdown">
-      <a href="#">Produtos ▾</a>
-      <ul class="submenu">
-         <li><a href="kits.html">Kits de Churrasco</a></li>
-         <li><a href="carnes.html">Carnes</a></li>
-          <li><a href="temperos.html">Temperos</a></li>
-        <li><a href="bebidas.html">Bebidas</a></li>
-      </ul>
-    </li>
-    <li><a href="contato.html">Contato</a></li>
-    
-  </ul>
-</nav>
+  <header class="site-header">
+    <div class="header-inner">
+      <h1 class="brand">Casa de carnes Bandeirinhas</h1>
 
+      <nav class="nav" aria-label="Menu principal">
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-menu">☰</button>
 
-    
+        <ul id="main-menu" class="menu">
+          <li><a href="index.html">Início</a></li>
+
+          <li class="dropdown">
+            <button class="dropdown-toggle" aria-expanded="false" aria-controls="prod-submenu">
+              Produtos ▾
+            </button>
+            <ul id="prod-submenu" class="submenu" role="menu">
+              <li><a href="kits.html">Kits de Churrasco</a></li>
+              <li><a href="carnes.html">Carnes</a></li>
+              <li><a href="temperos.html">Temperos</a></li>
+              <li><a href="bebidas.html">Bebidas</a></li>
+            </ul>
+          </li>
+
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section id="banner">
+  <section id="banner" class="banner">
     <div class="banner-content">
       <h2>Carne de Verdade com Sabor de Tradição</h2>
-      <p>Minha família Servindo a Sua Família.</p>
+      <p>Minha família servindo a sua família.</p>
     </div>
   </section>
 
@@ -49,17 +53,11 @@
     </ul>
   </section>
 
-  <footer>
-    <a 
-  href="https://wa.me/5531984727548?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20site!"  
-  target="_blank" 
-  class="whatsapp-botao"
->
-  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" 
-       alt="WhatsApp" 
-       style="width: 30px; height: 30px; margin-right: 10px; vertical-align: middle;">
-  Fale conosco
-</a>
+  <footer class="site-footer">
+    <a href="https://wa.me/5531984727548?text=Ol%C3%A1%2C%20eu%20vim%20pelo%20site!" target="_blank" class="whatsapp-botao" rel="noopener">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" class="whatsapp-ico">
+      Fale conosco
+    </a>
 
     <p>&copy; 2025 Açougue Bandeirinhas - Todos os direitos reservados.</p>
   </footer>
