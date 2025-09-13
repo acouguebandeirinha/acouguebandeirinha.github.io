@@ -12,7 +12,7 @@ body {
 }
 
 header {
-  background-color: #941b0c;
+   background: linear-gradient(to right, #8B0000, #FF4500);
   padding: 20px;
   color: white;
   text-align: center;
@@ -95,15 +95,6 @@ footer {
   width: 32px;
   height: 32px;
   display: block;
-}
-
-.produtos-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
-  padding: 40px 20px;
-  max-width: 1100px;
-  margin: auto;
 }
 
 .produto {
@@ -220,13 +211,77 @@ footer {
   height: 32px;
   display: block;
 }
-.preco-vermelho {
-  color: #e60000;
-  font-weight: bold;
-  font-size: 20px;
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  background: linear-gradient(to right, #8B0000, #FF4500);
+  padding: 10px;
 }
-.preco-vermelho {
-  color: #e60000;
-  font-weight: bold;
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 8px 12px;
+  display: block;
+}
+
+.menu a:hover {
+  background:#006400;
+  border-radius: 5px;
+}
+
+/* Submenu escondido */
+.submenu {
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(to right, #8B0000, #FF4500);
+  display: none;
+  padding: 0;
+  margin: 0;
+  min-width: 180px;
+  border-radius: 5px;
+}
+
+/* Estilo dos itens do submenu */
+.submenu li a {
+  padding: 10px;
+  color: white;
+}
+
+.submenu li a:hover {
+  background: #006400;
+}
+
+/* Mostrar submenu ao passar o mouse */
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.produto {
+  display: inline-block;
+  width: 200px;
+  margin: 15px;
+  text-align: center;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+ .descricao {
+  color:#006400; 
+  font-size: 16px; 
   
 }
+
+
