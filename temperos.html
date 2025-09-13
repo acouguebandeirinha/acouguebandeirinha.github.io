@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tempero - Açougue</title>
   <style>
-   /* Estilo geral */
+/* Estilo geral */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -16,11 +16,12 @@ body {
 
 /* Menu */
 nav {
-  background: #c62828;
+  background: #800020; /* vinho */
   padding: 15px;
   display: flex;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap; /* permite quebrar linha no celular */
 }
 
 nav a {
@@ -39,13 +40,14 @@ nav a:hover {
 h1 {
   text-align: center;
   margin: 30px 0;
-  color: #c62828;
+  color: #800020;
 }
 
 /* Grid de produtos */
 .produtos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Sempre 3 colunas */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+  /* se adapta ao tamanho da tela */
   gap: 20px;
   padding: 20px;
   max-width: 1200px;
@@ -60,23 +62,23 @@ h1 {
   overflow: hidden;
   transition: transform 0.2s;
   text-align: center;
-  width: 220px;      /* largura menor -> retângulo em pé */
-  height: 350px;     /* altura maior */
-  margin: auto;      /* centraliza no grid */
+  padding: 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+.produto:hover {
+  transform: scale(1.03);
+}
+
 /* Imagem do produto */
 .produto img {
   width: 100%;
-  height: 180px;         /* altura fixa dentro do card */
-  object-fit: contain;   /* mostra a embalagem inteira */
+  max-height: 180px;
+  object-fit: contain;
   border-radius: 8px;
-  display: block;
-  margin: 0 auto;
-
+  margin-bottom: 10px;
 }
 
 /* Preço */
@@ -86,13 +88,24 @@ h1 {
   font-size: 1.2rem;
 }
 
-
+/* Responsividade extra */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav a {
+    font-size: 16px;
+  }
+  h1 {
+    font-size: 24px;
+  }
+}
 
 
   </style>
 </head>
 <body>
-
   <!-- Menu -->
    <nav>
     <a href="index.html">Início</a>
