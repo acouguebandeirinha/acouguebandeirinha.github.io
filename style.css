@@ -233,7 +233,7 @@ footer {
 }
 
 .menu a:hover {
-  background:#006400;
+  background:#Vamos;
   border-radius: 5px;
 }
 
@@ -258,7 +258,7 @@ footer {
 }
 
 .submenu li a:hover {
-  background: #006400;
+  background: #Vamos;
 }
 
 /* Mostrar submenu ao passar o mouse */
@@ -283,5 +283,72 @@ footer {
   font-size: 16px; 
   
 }
+
+/* reset simples */
+* { box-sizing: border-box; }
+html,body { margin:0; padding:0; font-family: Arial, Helvetica, sans-serif; color:#222; }
+
+/* container */
+.header-inner, .banner, .destaque, .site-footer { max-width:1100px; margin:0 auto; padding:16px; }
+
+/* header */
+.site-header { background:#Vamos; border-bottom:1px solid #eee; }
+.header-inner { display:flex; align-items:center; justify-content:space-between; gap:16px; }
+
+.brand { font-size:1.1rem; margin:0; }
+
+/* nav */
+.menu-toggle { display:none; background:none; border:none; font-size:1.2rem; cursor:pointer; }
+
+.menu { list-style:none; margin:0; padding:0; display:flex; gap:12px; align-items:center; }
+.menu a, .menu button { text-decoration:none; background:none; border:none; padding:8px 10px; cursor:pointer; font:inherit; color:inherit; }
+
+/* submenu */
+.dropdown { position:relative; }
+.submenu {
+  position:absolute;
+  top: calc(100% + 8px);
+  left:0;
+  min-width:180px;
+  display:none;
+  padding:6px 0;
+  background:#Vamos ;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-radius:6px;
+  z-index:50;
+}
+.submenu li a { display:block; padding:8px 12px; white-space:nowrap; }
+
+/* show on hover (desktop) */
+.menu li:hover > .submenu { display:block; }
+
+/* when JS adds .open to dropdown */
+.dropdown.open > .submenu { display:block; }
+
+/* banner */
+.banner { background: linear-gradient(135deg,#f4f4f4,#fff); padding:48px 16px; text-align:center; }
+.banner-content h2 { margin:0 0 8px; font-size:1.6rem; }
+.banner-content p { margin:0; color:#FFFFFF; }
+
+/* destaque */
+.destaque { padding:24px 16px; }
+.destaque ul { padding-left:18px; }
+
+/* footer */
+.site-footer { text-align:center; padding:20px 16px; border-top:1px solid #FFD700; }
+.whatsapp-botao { display:inline-flex; align-items:center; gap:8px; padding:8px 12px; border-radius:8px; background:##800020; color:#fff; text-decoration:none; }
+.whatsapp-ico { width:24px; height:24px; }
+
+/* responsive */
+@media (max-width: 800px) {
+  .header-inner { padding:12px; }
+  .menu { display:none; flex-direction:column; align-items:flex-start; width:100%; background:#fff; padding:8px; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,0.06); position:absolute; right:16px; top:64px; }
+  .menu.open { display:flex; }
+  .menu-toggle { display:inline-block; }
+  .menu li { width:100%; }
+  .submenu { position:relative; top:0; left:0; box-shadow:none; border-radius:6px; margin-top:6px; }
+  .menu li:hover > .submenu { display:none; } /* hover não confiável em mobile */
+}
+
 
 
