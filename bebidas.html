@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bebidas- Açougue</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    nav {
+      background: #c62828;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 40px 0 20px;
+      color: #c62828;
+      font-size: 2.2rem;
+    }
+
+    .produtos {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); /* 3 por linha */
+      gap: 30px;
+      padding: 20px;
+      max-width: 1100px;
+      margin: auto;
+
+    }
+
+    .produto {
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      text-align: center;
+      padding: 15px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .produto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+
+    .produto img {
+      width: 100%;
+      height: 180px;
+      object-fit: contain;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      background: #f5f5f5;
+      padding: 10px;
+    }
+
+    .produto h3 {
+      margin: 10px 0;
+      color: #444;
+      font-size: 1.3rem;
+      
+
+    }
+
+    .produto p {
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin: 5px 0 15px;
+
+    }
+
+    .preco {
+      color: #c62828;
+      font-weight: bold;
+      font-size: 2.8rem;
+      margin-top: auto;
+    }
+
+    .produto {
+  background-color: #FFFFFF; /* fundo do card */
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+  width: 220px;
+  height: 350px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.produto img {
+  background-color: #FFFFFF; /* fundo da imagem */
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="kits.html">Kits de Churrasco</a>
+    <a href="carnes.html">Carnes</a>
+    <a href="temperos.html">Temperos</a>
+    <a href="bebidas.html">Bebidas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+
+  <!-- Conteúdo -->
+  <h1>Bebidas</h1>
+  <div class="produtos">
+    <div class="produto">
+      <img src="imagens/1b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Ice Kisla</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 3,99 /</p>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/2b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Kaiser</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">4,99/473m</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/3b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Budweiser</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">6,99 / 473ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/4b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Original</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 6,99 / 473ml </p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/5b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Caracu</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">6,99/350ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/6b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Heineken long neck </h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">7,99/330ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/7b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Heineken</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 7,99/473ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/8b.png"width="256" height="172"  alt="bebidas">
+      <h3>Brahmar</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 5,99/473ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/9b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Brahma0,0 alcool</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">5,99/350ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/10b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Stella artois sem glúteo</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">7,99/330ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/11b.jpeg"width="256" height="172"  alt="bebidas">
+      <h3>Stella artois</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 6,99/330ml</p>
+    </div>
+
+
+          <!-- Caixa de cerveja -->
+
+
+     <div class="produto">
+      <img src="imagens/12b.png"width="256" height="172"  alt="bebidas">
+      <h3>brahmar</h3>
+      <p>12 unidade por apenas:</p>
+      <p class="preco">65,99/473ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/13b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Original</h3>
+      <p>12 unidade por apenas:</p>
+      <p class="preco"> 77,99/473ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/14b.jpeg"width="256" height="172"  alt="bebidas">
+      <h3>Heineken</h3>
+      <p>12 unidade por apenas:</p>
+      <p class="preco">95,88/473ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/15b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Kaiser</h3>
+      <p>12 unidade por apenas:</p>
+      <p class="preco">54,00/473ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/16b.webp"width="256" height="172"  alt="bebidas">
+      <h3>budweiser</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">81,60 /</p>
+    </div>
+
+
+              <!-- Vinho -->
+
+
+     <div class="produto">
+      <img src="imagens/17b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Pérgola</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">26,99/1l</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/18b.jpeg"width="256" height="172"  alt="bebidas">
+      <h3>Chapinha</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 16,00 /750ml</p>
+    </div>
+
+     <div class="produto">
+      <img src="imagens/19b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Campo largo</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 20,00/1l</p>
+    </div>
+
+
+          <!-- Refrigerante -->
+
+
+ <div class="produto">
+      <img src="imagens/20b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Coca-Cola</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">12,99/2l</p>
+    </div>
+
+    <div class="produto">
+      <img src="imagens/21b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Coca-Cola Zero</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">12,99/2l</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/22b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Sukita</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">7,99/2l</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/23b.jpg"width="300" height="200"  alt="bebidas">
+      <h3>Soda</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">8,99/2l</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/24b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Guarapan</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">9,99/2l</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/25b.png"width="256" height="172"  alt="bebidas">
+      <h3>Guaraná</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 9,99/2l</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/26b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Guaraná Zero</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 9,99/2l</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/27b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Guaraná lata</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">3,99/350ml</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/28b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Mate couro</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">9,99/2l</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/29b.avif"width="256" height="172"  alt="bebidas">
+      <h3>Pepsi</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 9,99/2l</p>
+    </div>
+
+
+<div class="produto">
+      <img src="imagens/30b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Tônica Antarctica</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">4,99/350ml</p>
+    </div>
+
+
+           
+             <!-- Energetico --> 
+
+
+
+     <div class="produto">
+      <img src="imagens/31b.png"width="256" height="172"  alt="bebidas">
+      <h3>Jack</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">11,99/2l</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/32b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Monster</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 11,99/473ml</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/33b.webp"width="256" height="172"  alt="bebidas">
+      <h3>Monster energy suco</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 11,99/473ml</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/34b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Redbull</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">11,99/250ml</p>
+    </div>
+
+
+              <!-- modelo -->
+
+
+
+     <div class="produto">
+      <img src="imagens/35b.jpeg"width="256" height="172"  alt="bebidas">
+      <h3>H2OHO limoneto</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">4,99/500ml</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/36b.webp"width="256" height="172"  alt="bebidas">
+      <h3>H2OHO Limão</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 4,99/500ml</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/37b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Água com gás</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 3,50/500ml</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/38b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Água sem gás</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">2,00/500ml</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/39b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Água com gás</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 5,50/1,5l</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/40b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Água sem gás</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco">5,00 /1,5l</p>
+    </div>
+
+
+     <div class="produto">
+      <img src="imagens/41b.jpg"width="256" height="172"  alt="bebidas">
+      <h3>Sucos Tial</h3>
+      <p>Cada unidade por apenas:</p>
+      <p class="preco"> 8,99/1l</p>
+    </div>
